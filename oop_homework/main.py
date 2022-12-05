@@ -1,7 +1,7 @@
 import our_classes.drunk as cheers
 
 ## какую домашку запускаем?
-task = 3
+task = 4
 
 if task == 1:
     
@@ -30,7 +30,13 @@ if task == 3:
 
     todo_list = cheers.TodoList()
     todo_list.add_task('to buy a bulb')
-    todo_list.add_task('to change a bulb')
-    todo_list.add_task('to throw out a bulb')
+    todo_list.add_task('to change the bulb')
+    todo_list.add_task('to throw out the bulb')
     print('\n'.join(todo_list.tasks))
     
+if task == 4:
+    db = cheers.DataBase('root', '1234', 80)
+    print(db)
+    db2 = cheers.DataBase('root2', '5678', 40)
+    print(db2)
+    print('db is db2, isnt it? ', db is db2)
