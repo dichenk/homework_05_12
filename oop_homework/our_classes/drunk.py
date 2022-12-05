@@ -7,6 +7,7 @@ class Bottle:
 class Bottle_fill:
 
     def __init__(self, colour, contains = 0):
+
         self.colour = colour
         self.contains = contains
 
@@ -15,4 +16,18 @@ class Bottle_fill:
 
     def fill(self, volume):
         self.contains += volume
+
+class TodoList:
+    
+    def __init__(self, task = "empty"):
+        self.tasks = [task]
+
+    def add_task(self, task):
+        if self.tasks == ['empty']:
+            self.tasks = [task]
+        else:
+            self.tasks.append(task)
+
+
+
 

@@ -1,7 +1,7 @@
 import our_classes.drunk as cheers
 
 ## какую домашку запускаем?
-task = 2
+task = 3
 
 if task == 1:
     
@@ -26,5 +26,11 @@ if task == 2:
     bottle_2.fill(500)
     print(bottle_2.colour, bottle_2.get_content())
 
+if task == 3:
 
-
+    todo_list = cheers.TodoList()
+    todo_list.add_task('to buy a bulb')
+    todo_list.add_task('to change a bulb')
+    todo_list.add_task('to throw out a bulb')
+    print('\n'.join(todo_list.tasks))
+    
